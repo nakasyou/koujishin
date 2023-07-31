@@ -31,8 +31,8 @@ jobs:
         with:
           deno-version: v1.x
       
-      - name: Generate
-        run: deno task#deno task manifest
+     # - name: Generate
+     #   run: deno task#deno task manifest
       
       - name: Echo
         run: cat fresh.gen.ts
