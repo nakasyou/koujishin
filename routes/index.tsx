@@ -19,12 +19,14 @@ export default function Home() {
             広辞深は、Webをベースにした電子辞書です。
             <div>
               <div class="text-2xl">Concepts</div>
-              <div>
-                <div class="text-xl">OSS</div>
+              <div class="ml-5">
                 <div>
-                  広辞深は、オープンソースソフトウェアとして開発されています。
-                  辞書データもオープンソースです。
-                  自由で開かれた電子辞書を目指します。
+                  <div class="text-xl">OSS</div>
+                  <div>
+                    広辞深は、オープンソースソフトウェアとして開発されています。
+                    辞書データもオープンソースです。
+                    自由で開かれた電子辞書を目指します。
+                  </div>
                 </div>
               </div>
             </div>
