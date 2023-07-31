@@ -1,0 +1,1 @@
+// Koujishin dictionary data program
