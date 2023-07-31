@@ -10,7 +10,7 @@ export default () => {
     ;(async () => {
       const indexesApiResult = await fetch("/api/dict/get-indexes").then(res => res.json())
       indexes.value = indexesApiResult
-      alert(indexes.value)
+      alert(JSON.stringify(indexes.value))
     })()
   }, [])
   return <>
