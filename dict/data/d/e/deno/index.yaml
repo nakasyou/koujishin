@@ -1,0 +1,11 @@
+title: deno
+kanji: でぃの
+raw: Deno
+explanations:
+  - examples: []
+    images:
+      - alt: Denoのロゴ
+        path: logo.svg
+        license: MIT
+    body: |
+      V8 JavaScript Engine及びRustに基づいた、JavaScriptやTypeScriptのランタイム環境。
