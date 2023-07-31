@@ -32,7 +32,7 @@ jobs:
           deno-version: v1.x
       
       - name: Generate
-        run: timeout 5 deno task start
+        run: deno task manifest
       
       - name: Echo
         run: cat fresh.gen.ts
