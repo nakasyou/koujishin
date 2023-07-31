@@ -17,6 +17,7 @@ export default () => {
     <div>
       <div>This is app</div>
       <div>
+        { JSON.stringify(indexes.value) }
       </div>
     </div>
     <div>
