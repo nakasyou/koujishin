@@ -66,10 +66,10 @@ export default () => {
                           {
                             explanation.examples.length !== 0 ? (<div>
                               <div>例文:</div>
-                              <ul>
+                              <ul class="list-disc">
                                 { explanation.examples.map(example => {
                                   return <li>
-                                    { example }
+                                    「{ example }」
                                   </li>
                                 })}
                               </ul>
