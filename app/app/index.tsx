@@ -45,14 +45,14 @@ export default () => {
                   hinshiTypeAbbr = "無"
               }
               wordData.hinshi.type
-              return <div>
+              return <div class="my-4">
                 <div>
                   <span><b>{ wordData.read }</b></span>
                   <span><b>【{ wordData.kanji }】</b></span>
                   <span>/ { wordData.title }</span>
                   <span>≪{`${hinshiTypeAbbr}`}≫</span>
                 </div>
-                <div>
+                <div class="indent-4">
                   {
                     wordData.explanations.map((explanation, index) => {
                       return <div>
