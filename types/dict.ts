@@ -29,11 +29,29 @@ export interface Explanation {
   body: string
 }
 export interface WordData {
-  title: string
+  read: string
   kanji: string
-  raw: string
+  title: string
   explanations: Explanation[]
-  
+  /**
+   * 品詞データ
+   */
+  hinshi: {
+    /**
+     * 品詞の種類
+     */
+    name: "固有名詞" | "動詞"
+    /**
+     * 品詞の活用の段
+     * @example
+     * - サ行で活用 → サ行
+     */
+    conjugation?: "カ" | "サ"
+    /**
+     * 自動詞か他動詞か
+     */
+    isIntransitiveVerb?: boolean
+  }
 }
 
 export interface WordIndex {

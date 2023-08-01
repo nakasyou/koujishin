@@ -9,3 +9,6 @@ explanations:
         license: MIT
     body: |
       V8 JavaScript Engine及びRustに基づいた、JavaScriptやTypeScriptのランタイム環境。
+hinshi:
+  name: "固有名詞"
+  

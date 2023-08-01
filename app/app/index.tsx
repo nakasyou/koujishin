@@ -30,11 +30,24 @@ export default () => {
         <div>
           {
             wordDatas.map(wordData => {
+              let hinshiTypeAbbr = ""
+              switch (wordData.hinshi.type) {
+                case '固有名詞':
+                  hinshiTypeAbbr = "固名"
+                  break
+                case '動詞':
+                  hinshiTypeAbbr = "動"
+                  break
+                default:
+                  hinshiTypeAbbr = "無"
+              }
+              wordData.hinshi.type
               return <div>
                 <div>
                   <span><b>{ wordData.read }</b></span>
                   <span><b>【{ wordData.kanji }】</b></span>
                   <span>/ { wordData.title }</span>
+                  <span>≪{`${hinshiTypeAbbr}`}≫</span>
                 </div>
               </div>
             })
