@@ -52,7 +52,7 @@ export default () => {
                   <span>/ { wordData.title }</span>
                   <span>≪{`${hinshiTypeAbbr}`}≫</span>
                 </div>
-                <div class="indent-4">
+                <div class="ml-4">
                   {
                     wordData.explanations.map((explanation, index) => {
                       return <div>
