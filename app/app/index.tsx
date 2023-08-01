@@ -38,6 +38,9 @@ export default () => {
                 case '動詞':
                   hinshiTypeAbbr = "動"
                   break
+                case '普通名詞':
+                  hinshiTypeAbbr = "名"
+                  break
                 default:
                   hinshiTypeAbbr = "無"
               }
