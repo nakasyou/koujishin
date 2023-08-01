@@ -1,7 +1,7 @@
 import { getIndexes } from "~/dict/mod.ts"
 import { HandlerContext } from "$fresh/server.ts"
 
-export const handler = async (_req: Request, _ctx: HandlerContext): Response => {
+export const handler = async (_req: Request, _ctx: HandlerContext): Promise<Response> => {
   const result = []
   for await (const name of getIndexes()) {
     result.push(name)
