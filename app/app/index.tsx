@@ -61,7 +61,7 @@ export default () => {
                             <div>{ index + 1 }</div>
                           </div>
                         </div>
-                        <div class="indent-4">
+                        <div class="ml-4">
                           <div>{ explanation.body }</div>
                           {
                             explanation.examples.length !== 0 ? (<div>
