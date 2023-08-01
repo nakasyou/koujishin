@@ -4,7 +4,7 @@ export async function *getIndexes() {
   for await (const entry of expandGlob('./dict/data/**/index.yaml')) {
     const pathSplited = entry.path.split("/")
     yield {
-      name: pathSplited.at(-2)
+      id: pathSplited.at(-3) + "/" + pathSplited.at(-2)
     }
   }
 }

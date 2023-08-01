@@ -33,6 +33,7 @@ export interface WordData {
   kanji: string
   raw: string
   explanations: Explanation[]
+  
 }
 
 export interface WordIndex {

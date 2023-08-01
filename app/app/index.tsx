@@ -26,10 +26,19 @@ export default () => {
     <div>
       <div>This is app</div>
       <div>
-        { JSON.stringify(indexes) }
-      </div>
-      <div>
-        { JSON.stringify(wordDatas)}
+        <div class="text-3xl text-center">広辞深</div>
+        <div>
+          {
+            wordDatas.map(wordData => {
+              return <div>
+                <div>
+                  <span><b>{ word.title }</b></span>
+                  <span><b>【{ word.kanji }】</b></span>
+                </div>
+              </div>
+            })
+          }
+        </div>
       </div>
     </div>
     <div>
