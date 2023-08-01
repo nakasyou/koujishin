@@ -53,8 +53,8 @@ export default () => {
                   {
                     wordData.explanations.map((explanation, index) => {
                       return <div>
-                        <span>{index}</span>
-                        <span>{ body }</span>
+                        <span>{ index }</span>
+                        <span>{ explanation.body }</span>
                       </div>
                     })
                   }
