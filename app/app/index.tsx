@@ -65,7 +65,7 @@ export default () => {
                           <div>{ explanation.body }</div>
                           {
                             explanation.examples.length !== 0 ? (<div>
-                              <div>例文:</div>
+                              <div>◆<b>例文</b>:</div>
                               <ul class="list-disc">
                                 { explanation.examples.map(example => {
                                   return <li>
