@@ -58,8 +58,20 @@ export default () => {
                             <div>{ index + 1 }</div>
                           </div>
                         </div>
-                        <div>
-                          <div class="indent-4">{ explanation.body }</div>
+                        <div class="indent-4">
+                          <div>{ explanation.body }</div>
+                          {
+                            explanation.examples.length !== 0 ? (<div>
+                              <div>例文:</div>
+                              <ul>
+                                { explanation.examples.map(example => {
+                                  return <li>
+                                    { example }
+                                  </li>
+                                })}
+                              </ul>
+                            </div>) : null
+                          }
                         </div>
                       </div>
                     })
