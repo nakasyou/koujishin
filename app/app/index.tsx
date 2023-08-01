@@ -53,8 +53,12 @@ export default () => {
                   {
                     wordData.explanations.map((explanation, index) => {
                       return <div>
-                        <span>{ index }</span>
-                        <span>{ explanation.body }</span>
+                        <div>
+                          <div class="inline-block rounded-full border p-2">{ index + 1 }</div>
+                        </div>
+                        <div>
+                          <div class="indent-4">{ explanation.body }</div>
+                        </div>
                       </div>
                     })
                   }
