@@ -32,8 +32,8 @@ export default () => {
             wordDatas.map(wordData => {
               return <div>
                 <div>
-                  <span><b>{ word.title }</b></span>
-                  <span><b>【{ word.kanji }】</b></span>
+                  <span><b>{ wordData.title }</b></span>
+                  <span><b>【{ wordData.kanji }】</b></span>
                 </div>
               </div>
             })
