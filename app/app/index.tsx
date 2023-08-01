@@ -54,7 +54,7 @@ export default () => {
                     wordData.explanations.map((explanation, index) => {
                       return <div>
                         <div>
-                          <div class="inline-block rounded-full border p-2 w-4 h-4 border-black flex justify-center items-center">
+                          <div class="rounded-full border w-4 h-4 border-black flex justify-center items-center">
                             <div>{ index + 1 }</div>
                           </div>
                         </div>
