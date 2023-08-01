@@ -5,7 +5,7 @@ import { type WordData } from "~/types/dict.ts"
 
 export default () => {
   const [indexes, setIndexes] = useState<{
-    name: string
+    id: string
   }[]>([])
   const [wordDatas, setWordDatas] = useState<WordData[]>([])
   useEffect(() => {
@@ -15,7 +15,7 @@ export default () => {
 
       const wordDatasTmp: WordData[] = []
       for (const index of indexesApiResult) {
-        const wordData: WordData = await fetch(`/api/dict/get-data-from-word/${index.name}`).then(res => res.json())
+        const wordData: WordData = await fetch(`/api/dict/get-data-from-word?id=${index.id}`).then(res => res.json())
         wordDatasTmp.push(wordData)
         setWordDatas([...wordDatasTmp])
       }
