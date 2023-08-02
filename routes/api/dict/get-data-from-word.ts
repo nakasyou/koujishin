@@ -7,7 +7,7 @@ export const handler = async (req: Request, _ctx: HandlerContext): Promise<Respo
   const result = await getDataFromIndex(id)
   return new Response(result, {
     headers: {
-      "content-type": "text/javascript"
+      "content-type": "text/javascript; charset=UTF-8"
     }
   })
 }

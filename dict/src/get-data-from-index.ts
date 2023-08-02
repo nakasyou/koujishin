@@ -10,6 +10,6 @@ export async function getDataFromIndex(id: string) {
   }
   const yamlData = await Deno.readTextFile(`./dict/data/${index}/index.ts`)
   //const data = yaml.parse(yamlData)
-  const data = JSON.stringify(yamlData.match(/(?<=export default defineWordData\().*(?=\))/s))
+  const data = yamlData.match(/(?<=export default defineWordData\().*(?=\))/s)[0]
   return data
 }
