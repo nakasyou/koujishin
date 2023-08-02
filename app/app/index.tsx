@@ -15,6 +15,7 @@ export default () => {
 
       const wordDatasTmp: WordData[] = []
       for (const index of indexesApiResult) {
+        alert(index.id)
         const wordData: WordData = eval(await fetch(`/api/dict/get-data-from-word?id=${index.id}`).then(res => res.text()))
         wordDatasTmp.push(wordData)
         setWordDatas([...wordDatasTmp])
