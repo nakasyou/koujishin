@@ -10,5 +10,5 @@ export async function getDataFromIndex(id: string) {
   }
   const yamlData = await Deno.readTextFile(`./dict/data/${index}/index.ts`)
   //const data = yaml.parse(yamlData)
-  return data
+  return yamlData
 }
