@@ -1,0 +1,16 @@
+read: うそ
+kanji: 嘘
+title: 嘘
+explanations:
+  - examples: []
+    images: []
+    body: |
+      事実ではないことを、意図的に伝えること。またはその内容。偽り。
+  - examples:
+    - 嘘の字を書く
+    images: []
+    body: |
+      誤り。正しくないこと。
+hinshi:
+  name: "普通名詞"
+  
