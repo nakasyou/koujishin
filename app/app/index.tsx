@@ -17,10 +17,10 @@ export default () => {
       for (const index of indexesApiResult) {
         const json5Text = await fetch(`/api/dict/get-data-from-word?id=${index.id}`).then(res => res.text())
         const wordData: WordData = (new Function("return (" + json5Text + ")"))()
+        alert(JSON.stringify(wordData))
         wordDatasTmp.push(wordData)
         setWordDatas([...wordDatasTmp])
       }
-      alert(JSON.stringify(wordDatas))
     })()
 
   }, [])
