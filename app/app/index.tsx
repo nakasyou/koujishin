@@ -25,7 +25,6 @@ export default () => {
   }, [])
   return <>
     <div>
-      <div>This is app</div>
       <div class="mx-10">
         <div class="text-3xl text-center">広辞深</div>
         <div>
