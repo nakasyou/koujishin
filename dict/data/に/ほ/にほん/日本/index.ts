@@ -7,7 +7,7 @@ export default defineWordData({
   parts: [
     {
       hinshis: [{
-        type: "普通名詞"
+        type: "固有名詞"
       }],
       meanings: [
         {
