@@ -30,7 +30,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div class="text-center">
+            <div class="fixed buttom-0 left-0">
               <a href="/app" class="bg-teal-400 drop-shadow-md rounded-lg hover:bg-teal-500 p-4">広辞深を開く↗︎</a>
             </div>
           </div>
