@@ -32,6 +32,11 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div class="">
+          <div class="flex justify-center">
+            <a href="/app" class="bg-teal-400 drop-shadow-md rounded-lg hover:bg-teal-500 p-4">広辞深を開く↗︎</a>
+          </div>
+        </div>
       </main>
     </>
   )
