@@ -31,7 +31,7 @@ export default () => {
         <div>
           {
             wordDatas.map(wordData => {
-              return (<div class="flex gap-3">
+              return (<div class="ml-2">
                 <div>
                   <span><b>{ wordData.read }</b></span>
                   <span><b>【{ wordData.kanji }】</b></span>
