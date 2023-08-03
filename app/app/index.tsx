@@ -31,13 +31,13 @@ export default () => {
         <div>
           {
             wordDatas.map(wordData => {
-              return (<div>
+              return (<div class="flex gap-3">
                 <div>
                   <span><b>{ wordData.read }</b></span>
                   <span><b>【{ wordData.kanji }】</b></span>
                   <span>/ { wordData.title }</span>
                 </div>
-                <ul>
+                <div>
                   {
                     wordData.parts.map(part => {
                       const hinshiTypeAbbr = ({
@@ -49,7 +49,7 @@ export default () => {
                         <div>
                           {
                             part.meanings.map((meaning, meaningIndex) => {
-                              return <div class="flex">
+                              return <div class="flex gap-2">
                                 <div>
                                   <div>{
                                     ["①","②","③","④","⑤","⑥","⑦","⑧","⑨","⑩"][meaningIndex]
@@ -77,7 +77,7 @@ export default () => {
                       </div>
                     })
                   }
-                </ul>
+                </div>
               </div>)
               let hinshiTypeAbbr = ""
               switch (wordData.hinshi.name) {
