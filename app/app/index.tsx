@@ -30,7 +30,6 @@ export default () => {
         <div>
           {
             wordDatas.map(wordData => {
-              alert(wordData.read)
               return (<div class="ml-2 my-3">
                 <div>
                   <span><b>{ wordData.read }</b></span>
