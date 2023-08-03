@@ -46,6 +46,7 @@ export default () => {
                           "動詞": "動",
                           "形容動詞": "形動",
                           "数量詞": "数量",
+                          "形容詞": "形",
                         })[hinshi.type] || "無"
                         return hinshiTypeAbbr
                       })

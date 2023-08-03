@@ -4,7 +4,7 @@ interface HinshiBase {
   /**
    * 品詞の種類
    */
-  type: "普通名詞" | "固有名詞" | "数量詞" | "動詞" | "形容動詞"
+  type: "普通名詞" | "固有名詞" | "数量詞" | "動詞" | "形容詞" | "形容動詞"
 }
 interface Doushi extends HinshiBase {
   type: "動詞"
@@ -35,9 +35,14 @@ interface Keiyodoushi extends HinshiBase {
    */
   conjugationType: "ダ"
 }
+interface Keiyoushi extends HinshiBase {
+  type: "形容詞"
+}
 export type Hinshi =
   (
     Doushi |
-    Meishi
+    Meishi |
+    Keiyoushi |
+    Keiyodoushi
   ) 
   & HinshiBase
