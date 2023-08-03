@@ -55,7 +55,7 @@ export default () => {
                                   {
                                     (meaning.examples.length !== 0) && (<div>
                                       <div>e.g.:</div>
-                                      <ul>
+                                      <ul class="list-disc">
                                         {
                                           meaning.examples.map(example => <li>
                                             「{example}」
