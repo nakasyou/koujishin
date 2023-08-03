@@ -11,7 +11,7 @@ export default defineWordData({
       }],
       meanings: [
         {
-          body: "ネットスケープが次世代のインターネットスイートを作る目的で作成されたオープンソースプロジェクトを運用する団体。Mozilla Foundation。",
+          body: "ネットスケープが次世代のインターネットスイートを作る目的で設立したオープンソースプロジェクトを運用する団体。Mozilla Foundation。",
           examples: [],
           images: [],
         },
