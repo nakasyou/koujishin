@@ -20,6 +20,7 @@ export default () => {
         wordDatasTmp.push(wordData)
         setWordDatas([...wordDatasTmp])
       }
+      alert(JSON.stringify(wordDatas))
     })()
 
   }, [])
@@ -30,7 +31,6 @@ export default () => {
         <div>
           {
             wordDatas.map(wordData => {
-              alert(JSON.stringify(wordData))
               return (<div class="ml-2">
                 <div>
                   <span><b>{ wordData.read }</b></span>
