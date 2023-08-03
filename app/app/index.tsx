@@ -81,7 +81,7 @@ export default () => {
                         </div>
                       </div>
                       }catch(e){
-                        alert(e)
+                        alert(0)
                       }
                     })
                   }
