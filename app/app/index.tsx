@@ -44,18 +44,18 @@ export default () => {
                         "普通名詞": "名",
                         "固有名詞": "固名"
                       })[part.hinshi.type] || "無"
-                      return <div class="flex">
+                      return <div class="flex gap-2">
                         <div>≪{hinshiTypeAbbr}≫</div>
                         <div>
                           {
                             part.meanings.map((meaning, meaningIndex) => {
-                              return <div>
+                              return <div class="flex">
                                 <div>
-                                  <div>
-                                    <div>{
-                                      ["①","②","③","④","⑤","⑥","⑦","⑧","⑨","⑩"][meaningIndex]
-                                    }</div>
-                                  </div>
+                                  <div>{
+                                    ["①","②","③","④","⑤","⑥","⑦","⑧","⑨","⑩"][meaningIndex]
+                                  }</div>
+                                </div>
+                                <div>
                                   <div>{ meaning.body }</div>
                                   {
                                     (meaning.examples.length !== 0) && (<div>
