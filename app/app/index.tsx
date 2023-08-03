@@ -16,9 +16,7 @@ export default () => {
       const wordDatasTmp: WordData[] = []
       for (const index of indexesApiResult) {
         const json5Text = await fetch(`/api/dict/get-data-from-word?id=${index.id}`).then(res => res.text())
-        alert(json5Text)
         const wordData: WordData = window.eval("(" + json5Text + ")")
-        alert(JSON.stringify(wordData))
         wordDatasTmp.push(wordData)
         setWordDatas([...wordDatasTmp])
       }
@@ -33,6 +31,13 @@ export default () => {
         <div>
           {
             wordDatas.map(wordData => {
+              return (<div>
+                <div>
+                  <span><b>{ wordData.read }</b></span>
+                  <span><b>【{ wordData.kanji }】</b></span>
+                  <span>/ { wordData.title }</span>
+                </div>
+              </div>)
               let hinshiTypeAbbr = ""
               switch (wordData.hinshi.name) {
                 case '固有名詞':
