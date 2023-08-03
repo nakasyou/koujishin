@@ -30,6 +30,7 @@ export default () => {
         <div>
           {
             wordDatas.map(wordData => {
+              alert(wordData.read)
               return (<div class="ml-2 my-3">
                 <div>
                   <span><b>{ wordData.read }</b></span>
@@ -39,7 +40,6 @@ export default () => {
                 <div class="ml-4">
                   {
                     wordData.parts.map(part => {
-                      alert(part.read)
                       const hinshiTypes = part.hinshis.map(hinshi => {
                         const hinshiTypeAbbr = ({
                           "普通名詞": "名",
