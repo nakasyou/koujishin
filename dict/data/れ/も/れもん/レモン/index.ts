@@ -11,10 +11,9 @@ export default defineWordData({
       },
       meanings: [
         {
-          body: "レモンのこと。",
-          examples: [
-            "レモンを絞る"
-          ],
+          body: `ミカン科の常緑低木、およびその果実。
+果実は酸っぱい。`,
+          examples: [],
           images: []
         }
       ]
