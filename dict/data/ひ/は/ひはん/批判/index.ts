@@ -18,12 +18,12 @@ export default defineWordData({
       ]
     },
     {
-      hinshi: {
+      hinshis: [{
         type: "動詞",
         conjugationColumn: "サ",
         conjugationType: "上一段",
         jitaDoushi: "他",
-      },
+      }],
       meanings: [
         {
           body: "ほかの人の過ちを、責めたり、とがめたりする行為。",
