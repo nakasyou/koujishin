@@ -64,7 +64,7 @@ export default () => {
                                 <div>
                                   <div>{ meaning.body }</div>
                                   {
-                                    (meaning.examples.length !== 0) && (<div>
+                                    ((meaning.examples || []).length !== 0) && (<div>
                                       <div>e.g.:</div>
                                       <div class="ml-4">
                                         {

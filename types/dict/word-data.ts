@@ -35,11 +35,11 @@ export interface WordData {
       /**
        * 例文
        */
-      examples: string[]
+      examples?: string[]
       /**
        * 画像や図
        */
-      images: {
+      images?: {
         /**
          * ファイルのパス
          */
