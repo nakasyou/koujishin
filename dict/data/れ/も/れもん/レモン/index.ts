@@ -12,7 +12,9 @@ export default defineWordData({
       meanings: [
         {
           body: "レモンのこと。",
-          examples: [],
+          examples: [
+            "レモンを絞る"
+          ],
           images: []
         }
       ]
