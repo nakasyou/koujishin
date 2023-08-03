@@ -60,7 +60,7 @@ export default () => {
                                   {
                                     (meaning.examples.length !== 0) && (<div>
                                       <div>e.g.:</div>
-                                      <div class="">
+                                      <div class="ml-4">
                                         {
                                           meaning.examples.map(example => <div>
                                             ○「{example}」
