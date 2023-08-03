@@ -28,6 +28,13 @@ interface Doushi extends HinshiBase {
 interface Meishi extends HinshiBase {
   type: "普通名詞" | "固有名詞"
 }
+interface Keiyodoushi extends HinshiBase {
+  type: "形容動詞",
+  /**
+   * ダ活用とからしい。私はまだ習っていないのでよくわからない。でも一応入れる
+   */
+  conjugationType: "ダ"
+}
 export type Hinshi =
   (
     Doushi |

@@ -44,6 +44,7 @@ export default () => {
                           "普通名詞": "名",
                           "固有名詞": "固名",
                           "動詞": "動",
+                          "形容動詞": "形動",
                         })[hinshi.type] || "無"
                         return hinshiTypeAbbr
                       })

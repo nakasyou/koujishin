@@ -6,13 +6,21 @@ export default defineWordData({
   title: "新鮮",
   parts: [
     {
-      hinshis: [{
-        type: "普通名詞"
-      }],
+      hinshis: [
+        {
+          type: "普通名詞"
+        },
+        {
+          type: "形容動詞",
+          conjugationType: "ダ",
+        }
+      ],
       meanings: [
         {
-          body: "州の境界。",
-          examples: [],
+          body: "魚や肉、野菜などが、新しく生き生きとしていること。",
+          examples: [
+            "新鮮な空気"
+          ],
           images: []
         }
       ]
