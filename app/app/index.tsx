@@ -44,7 +44,7 @@ export default () => {
                         "普通名詞": "名",
                         "固有名詞": "固名"
                       })[part.hinshi.type] || "無"
-                      return <div>
+                      return <div class="flex">
                         <div>≪{hinshiTypeAbbr}≫</div>
                         <div>
                           {
