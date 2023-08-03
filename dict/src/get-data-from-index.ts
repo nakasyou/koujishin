@@ -8,7 +8,8 @@ export async function getDataFromIndex(id: string) {
   } else {
     index = `${read[0]}/${read[1]}/${read}/${kanji}`
   }
-  const yamlData = await Deno.readTextFile(`./dict/data/${index}/index.yaml`)
-  const data = yaml.parse(yamlData)
+  const yamlData = await Deno.readTextFile(`./dict/data/${index}/index.ts`)
+  //const data = yaml.parse(yamlData)
+  const data = yamlData.match(/(?<=export default defineWordData\().*(?=\))/s)[0]
   return data
 }

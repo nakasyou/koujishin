@@ -15,7 +15,8 @@ export default () => {
 
       const wordDatasTmp: WordData[] = []
       for (const index of indexesApiResult) {
-        const wordData: WordData = await fetch(`/api/dict/get-data-from-word?id=${index.id}`).then(res => res.json())
+        const json5Text = await fetch(`/api/dict/get-data-from-word?id=${index.id}`).then(res => res.text())
+        const wordData: WordData = (new Function("return (" + json5Text + ")"))()
         wordDatasTmp.push(wordData)
         setWordDatas([...wordDatasTmp])
       }
@@ -24,12 +25,60 @@ export default () => {
   }, [])
   return <>
     <div>
-      <div>This is app</div>
       <div class="mx-10">
         <div class="text-3xl text-center">広辞深</div>
         <div>
           {
             wordDatas.map(wordData => {
+              return (<div class="ml-2 my-3">
+                <div>
+                  <span><b>{ wordData.read }</b></span>
+                  <span><b>【{ wordData.kanji }】</b></span>
+                  <span>/ { wordData.title }</span>
+                </div>
+                <div class="ml-4">
+                  {
+                    wordData.parts.map(part => {
+                      const hinshiTypeAbbr = ({
+                        "普通名詞": "名",
+                        "固有名詞": "固名",
+                        "動詞": "動",
+                      })[part.hinshi.type] || "無"
+                      return <div class="flex gap-2">
+                        <div class="whitespace-nowrap">≪{hinshiTypeAbbr}≫</div>
+                        <div>
+                          {
+                            part.meanings.map((meaning, meaningIndex) => {
+                              return <div class="flex gap-2">
+                                <div>
+                                  <div>{
+                                    ["①","②","③","④","⑤","⑥","⑦","⑧","⑨","⑩"][meaningIndex]
+                                  }</div>
+                                </div>
+                                <div>
+                                  <div>{ meaning.body }</div>
+                                  {
+                                    (meaning.examples.length !== 0) && (<div>
+                                      <div>e.g.:</div>
+                                      <div class="ml-4">
+                                        {
+                                          meaning.examples.map(example => <div>
+                                            ○「{example}」
+                                          </div>)
+                                        }
+                                      </div>
+                                    </div>)
+                                  }
+                                </div>
+                              </div>
+                            })
+                          }
+                        </div>
+                      </div>
+                    })
+                  }
+                </div>
+              </div>)
               let hinshiTypeAbbr = ""
               switch (wordData.hinshi.name) {
                 case '固有名詞':

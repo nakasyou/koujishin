@@ -5,5 +5,9 @@ export const handler = async (req: Request, _ctx: HandlerContext): Promise<Respo
   const url: URL = new URL(req.url)
   const id = url.searchParams.get("id")
   const result = await getDataFromIndex(id)
-  return new Response(JSON.stringify(result))
+  return new Response(result, {
+    headers: {
+      "content-type": "text/javascript; charset=UTF-8"
+    }
+  })
 }
