@@ -17,7 +17,7 @@ export default defineWordData({
         }
       ]
     },
-   /* {
+    {
       hinshi: {
         type: "動詞",
         conjugationColumn: "サ",
@@ -26,9 +26,11 @@ export default defineWordData({
       },
       meanings: [
         {
-          body: "ほかの人の過ちを、責めたり、とがめたりする行為。"
+          body: "ほかの人の過ちを、責めたり、とがめたりする行為。",
+          examples: [],
+          images: [],
         }
       ]
-    }*/
+    }
   ]
 })
