@@ -44,32 +44,37 @@ export default () => {
                         "普通名詞": "名",
                         "固有名詞": "固名"
                       })[part.hinshi.type] || "無"
-                      return <li>
+                      return <div>
                         <div>≪{hinshiTypeAbbr}≫</div>
-                        <ul>
+                        <div>
                           {
-                            part.meanings.map(meaning => {
-                              return <li>
+                            part.meanings.map((meaning, meaningIndex) => {
+                              return <div>
                                 <div>
+                                  <div>
+                                    <div>{
+                                      ["①","②","③","④","⑤","⑥","⑦","⑧","⑨","⑩"][meaningIndex]
+                                    }</div>
+                                  </div>
                                   <div>{ meaning.body }</div>
                                   {
                                     (meaning.examples.length !== 0) && (<div>
                                       <div>e.g.:</div>
-                                      <ul class="list-disc">
+                                      <div class="">
                                         {
-                                          meaning.examples.map(example => <li>
-                                            「{example}」
-                                          </li>)
+                                          meaning.examples.map(example => <div>
+                                            ○「{example}」
+                                          </div>)
                                         }
-                                      </ul>
+                                      </div>
                                     </div>)
                                   }
                                 </div>
-                              </li>
+                              </div>
                             })
                           }
-                        </ul>
-                      </li>
+                        </div>
+                      </div>
                     })
                   }
                 </ul>
