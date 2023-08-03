@@ -45,7 +45,7 @@ export default () => {
                         "動詞": "動",
                       })[part.hinshi.type] || "無"
                       return <div class="flex gap-2">
-                        <div>≪{hinshiTypeAbbr}≫</div>
+                        <div class="whitespace-nowrap">≪{hinshiTypeAbbr}≫</div>
                         <div>
                           {
                             part.meanings.map((meaning, meaningIndex) => {
