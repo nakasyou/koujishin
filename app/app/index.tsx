@@ -52,16 +52,18 @@ export default () => {
                               return <li>
                                 <div>
                                   <div>{ meaning.body }</div>
-                                  <div>
-                                    <div>e.g.:</div>
-                                    <ul>
-                                      {
-                                        meaning.examples.map(example => <li>
-                                          「{example}」
-                                        </li>)
-                                      }
-                                    </ul>
-                                  </div>
+                                  {
+                                    (meaning.examples.length !== 0) && (<div>
+                                      <div>e.g.:</div>
+                                      <ul>
+                                        {
+                                          meaning.examples.map(example => <li>
+                                            「{example}」
+                                          </li>)
+                                        }
+                                      </ul>
+                                    </div>)
+                                  }
                                 </div>
                               </li>
                             })
