@@ -44,7 +44,7 @@ export default () => {
                           "普通名詞": "名",
                           "固有名詞": "固名",
                           "動詞": "動",
-                        })[part.hinshi.type] || "無"
+                        })[hinshi.type] || "無"
                         return hinshiTypeAbbr
                       })
                       return <div class="flex gap-2">
