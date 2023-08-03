@@ -37,6 +37,40 @@ export default () => {
                   <span><b>【{ wordData.kanji }】</b></span>
                   <span>/ { wordData.title }</span>
                 </div>
+                <ul>
+                  {
+                    wordData.parts.map(part => {
+                      const hinshiTypeAbbr = ({
+                        "普通名詞": "名",
+                        "固有名詞": "固名"
+                      })[part.hinshi.type] || "無"
+                      return <li>
+                        <div>≪{hinshiTypeAbbr}≫</div>
+                        <ul>
+                          {
+                            part.meanings.map(meaning => {
+                              return <li>
+                                <div>
+                                  <div>{ meaning.body }</div>
+                                  <div>
+                                    <div>e.g.:</div>
+                                    <ul>
+                                      {
+                                        meaning.examples.map(example => <li>
+                                          「{example}」
+                                        </li>)
+                                      }
+                                    </ul>
+                                  </div>
+                                </div>
+                              </li>
+                            })
+                          }
+                        </ul>
+                      </li>
+                    })
+                  }
+                </ul>
               </div>)
               let hinshiTypeAbbr = ""
               switch (wordData.hinshi.name) {
