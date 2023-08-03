@@ -36,7 +36,7 @@ export default () => {
                   <span><b>【{ wordData.kanji }】</b></span>
                   <span>/ { wordData.title }</span>
                 </div>
-                <div>
+                <div class="ml-4">
                   {
                     wordData.parts.map(part => {
                       const hinshiTypeAbbr = ({
