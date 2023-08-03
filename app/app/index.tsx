@@ -39,6 +39,7 @@ export default () => {
                 <div class="ml-4">
                   {
                     wordData.parts.map(part => {
+                      alert(part.read)
                       const hinshiTypes = part.hinshis.map(hinshi => {
                         const hinshiTypeAbbr = ({
                           "普通名詞": "名",
