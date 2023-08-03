@@ -18,6 +18,7 @@ export default () => {
         const json5Text = await fetch(`/api/dict/get-data-from-word?id=${index.id}`).then(res => res.text())
         const wordData: WordData = (new Function("return (" + json5Text + ")"))()
         wordDatasTmp.push(wordData)
+        alert(JSON.stringify(wordData))
         setWordDatas([...wordDatasTmp])
       }
     })()
@@ -30,7 +31,6 @@ export default () => {
         <div>
           {
             wordDatas.map(wordData => {
-              alert(wordData.read)
               return (<div class="ml-2 my-3">
                 <div>
                   <span><b>{ wordData.read }</b></span>
