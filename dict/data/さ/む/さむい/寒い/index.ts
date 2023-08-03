@@ -12,8 +12,6 @@ export default defineWordData({
       meanings: [
         {
           body: "気温が低くて不快なさま。",
-          examples: [],
-          images: []
         },
         {
           body: "ギャグやジョークがつまらないさま。",

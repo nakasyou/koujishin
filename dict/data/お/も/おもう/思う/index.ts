@@ -15,13 +15,9 @@ export default defineWordData({
       meanings: [
         {
           body: "心に浮かべたりすること。",
-          examples: [],
-          images: [],
         },
         {
           body: "感覚的に、心がとらえたり感じたりすること。",
-          examples: [],
-          images: [],
         },
       ]
     }
