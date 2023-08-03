@@ -48,7 +48,6 @@ export default () => {
                         })[hinshi.type] || "無"
                         return hinshiTypeAbbr
                       })
-                      try{
                       return <div class="flex gap-2">
                         <div class="whitespace-nowrap">≪{hinshiTypes.join("・")}≫</div>
                         <div>
@@ -80,9 +79,6 @@ export default () => {
                           }
                         </div>
                       </div>
-                      }catch(e){
-                        alert(0)
-                      }
                     })
                   }
                 </div>
