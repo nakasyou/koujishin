@@ -6,9 +6,9 @@ export default defineWordData({
   title: "批判",
   parts: [
     {
-      hinshi: {
+      hinshis: [{
         type: "普通名詞"
-      },
+      }],
       meanings: [
         {
           body: "欠点や過ちを指摘して責めたりすること。",

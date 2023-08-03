@@ -6,9 +6,9 @@ export default defineWordData({
   title: "税金",
   parts: [
     {
-      hinshi: {
+      hinshis: [{
         type: "普通名詞"
-      },
+      }],
       meanings: [
         {
           body: "国や地方自治体などが、経費にするために、国民や住民から取得する金銭は物。またはそのシステム。",

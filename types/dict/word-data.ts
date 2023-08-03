@@ -23,7 +23,7 @@ export interface WordData {
     /**
      * 品詞データ
      */
-    hinshi: Hinshi
+    hinshis: Hinshi[]
     /**
      * 意味別
      */

@@ -6,9 +6,9 @@ export default defineWordData({
   title: "Deno",
   parts: [
     {
-      hinshi: {
+      hinshis: [{
         type: "固有名詞"
-      },
+      }],
       meanings: [
         {
           body: "V8 JavaScript Engineに基づき、Rustで作られた、JavaScriptやTypeScriptのランタイム環境。",

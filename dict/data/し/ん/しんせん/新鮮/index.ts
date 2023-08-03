@@ -1,9 +1,9 @@
 import { defineWordData } from "~/types/dict.ts"
 
 export default defineWordData({
-  read: "しゅうきょう",
-  kanji: "宗教",
-  title: "宗教",
+  read: "しんせん",
+  kanji: "新鮮",
+  title: "新鮮",
   parts: [
     {
       hinshis: [{

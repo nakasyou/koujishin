@@ -6,9 +6,9 @@ export default defineWordData({
   title: "宗教",
   parts: [
     {
-      hinshi: {
+      hinshis: [{
         type: "普通名詞"
-      },
+      }],
       meanings: [
         {
           body: "神などの何らかの優れているものに関する信仰、それを行い安心を得るための行為。それらを行う集団。および、それらに基づく行い。",
