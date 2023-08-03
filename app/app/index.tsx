@@ -41,7 +41,8 @@ export default () => {
                     wordData.parts.map(part => {
                       const hinshiTypeAbbr = ({
                         "普通名詞": "名",
-                        "固有名詞": "固名"
+                        "固有名詞": "固名",
+                        "動詞": "動",
                       })[part.hinshi.type] || "無"
                       return <div class="flex gap-2">
                         <div>≪{hinshiTypeAbbr}≫</div>
