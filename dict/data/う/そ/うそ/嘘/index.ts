@@ -6,9 +6,9 @@ export default defineWordData({
   title: "嘘",
   parts: [
     {
-      hinshi: {
+      hinshis: [{
         type: "普通名詞"
-      },
+      }],
       meanings: [
         {
           body: "事実ではないことを、意図的に伝えること。またはその内容。偽り。",

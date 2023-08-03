@@ -23,7 +23,7 @@ export interface WordData {
     /**
      * 品詞データ
      */
-    hinshi: Hinshi
+    hinshis: Hinshi[]
     /**
      * 意味別
      */
@@ -35,11 +35,11 @@ export interface WordData {
       /**
        * 例文
        */
-      examples: string[]
+      examples?: string[]
       /**
        * 画像や図
        */
-      images: {
+      images?: {
         /**
          * ファイルのパス
          */

@@ -6,9 +6,9 @@ export default defineWordData({
   title: "レモン",
   parts: [
     {
-      hinshi: {
+      hinshis: [{
         type: "普通名詞",        
-      },
+      }],
       meanings: [
         {
           body: `ミカン科の常緑低木、およびその果実。

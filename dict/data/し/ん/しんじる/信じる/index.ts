@@ -6,12 +6,12 @@ export default defineWordData({
   title: "信じる",
   parts: [
     {
-      hinshi: {
+      hinshis: [{
         type: "動詞",
         conjugationColumn: "ザ",
         conjugationType: "上一段",
         jitaDoushi: "他",
-      },
+      }],
       meanings: [
         {
           body: "正しいと考えたり感じたりすること。嘘や偽りはないと思うこと。",

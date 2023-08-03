@@ -4,7 +4,7 @@ interface HinshiBase {
   /**
    * 品詞の種類
    */
-  type: "普通名詞" | "固有名詞" | "動詞" | "形容動詞"
+  type: "普通名詞" | "固有名詞" | "数量詞" | "動詞" | "形容詞" | "形容動詞"
 }
 interface Doushi extends HinshiBase {
   type: "動詞"
@@ -13,7 +13,7 @@ interface Doushi extends HinshiBase {
    * @remarks
    * 「信じる」はザ行上一段活用。よって「ザ」になる。
    */
-  conjugationColumn: "ア" | "カ" | "ガ" | "サ" | "ザ" // めんどくさいので随時追加
+  conjugationColumn: "ア" | "カ" | "ガ" | "サ" | "ザ" | "ワ" // めんどくさいので随時追加
   /**
    * 活用の段。
    * @remarks
@@ -26,11 +26,23 @@ interface Doushi extends HinshiBase {
   jitaDoushi: "自" | "他"
 }
 interface Meishi extends HinshiBase {
-  type: "普通名詞" | "固有名詞"
+  type: "普通名詞" | "固有名詞" | "数量詞"
+}
+interface Keiyodoushi extends HinshiBase {
+  type: "形容動詞",
+  /**
+   * ダ活用とからしい。私はまだ習っていないのでよくわからない。でも一応入れる
+   */
+  conjugationType: "ダ"
+}
+interface Keiyoushi extends HinshiBase {
+  type: "形容詞"
 }
 export type Hinshi =
   (
     Doushi |
-    Meishi
+    Meishi |
+    Keiyoushi |
+    Keiyodoushi
   ) 
   & HinshiBase

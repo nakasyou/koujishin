@@ -6,9 +6,9 @@ export default defineWordData({
   title: "宗教",
   parts: [
     {
-      hinshi: {
+      hinshis: [{
         type: "普通名詞"
-      },
+      }],
       meanings: [
         {
           body: "州の境界。",

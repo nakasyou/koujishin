@@ -6,9 +6,9 @@ export default defineWordData({
   title: "林檎",
   parts: [
     {
-      hinshi: {
+      hinshis: [{
         type: "普通名詞"
-      },
+      }],
       meanings: [
         {
           body: "バラ科の落葉高木、またはその果実。甘酸っぱいのが特徴。花は春の季語で、実は秋の季語。",
