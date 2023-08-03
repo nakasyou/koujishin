@@ -30,7 +30,7 @@ export default () => {
         <div>
           {
             wordDatas.map(wordData => {
-              return (<div class="ml-2">
+              return (<div class="ml-2 my-3">
                 <div>
                   <span><b>{ wordData.read }</b></span>
                   <span><b>【{ wordData.kanji }】</b></span>
