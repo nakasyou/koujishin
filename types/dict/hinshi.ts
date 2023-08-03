@@ -13,7 +13,7 @@ interface Doushi extends HinshiBase {
    * @remarks
    * 「信じる」はザ行上一段活用。よって「ザ」になる。
    */
-  conjugationColumn: "ア" | "カ" | "ガ" | "サ" | "ザ" // めんどくさいので随時追加
+  conjugationColumn: "ア" | "カ" | "ガ" | "サ" | "ザ" | "ワ" // めんどくさいので随時追加
   /**
    * 活用の段。
    * @remarks
